@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>面试与辅导系统</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="layui/css/layui.css" media="all">
+		<link rel="stylesheet" type="text/css" href="css/header.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		
+	
+	</head>
+
+	<body>
+		<!--公用头部-->
+		<header>
+			<div class="layui-fluid luheader">
+				<div class="layui-row">
+					<div class="layui-col-md4">
+						<div class="layui-row">
+							
+							<div class="layui-col-md4 layui-col-md-offset4"><img width="100px" height="40px" src="img/学习经历.png"/></div>
+							<!--<div class="layui-col-md4"><span></span></div>-->
+						</div>
+
+					</div>
+					<div class="layui-col-md4">
+						<form class="layui-form" action="">
+	
+								<input type="text" name="title" required lay-verify="required" placeholder="请输入所需课程" autocomplete="off" class="layui-input">
+								
+								<a  href="http://www.layui.com" class="layui-btn search-courese">搜索</a>
+							
+						</form>
+					</div>
+					<div class="layui-col-md4">
+						<div class="header-right-div">
+							<ul class="layui-nav header-ul"  >
+							  <li class=""  ><a href="">登录</a></li>
+						
+							  <li class=""><a href="">注册</a></li>
+						
+							  <li class="">
+							  	<span class="hide">关注我们</span>
+							  
+							  </li>
+						
+
+							</ul>
+						</div>
+					</div>
+					
+					</div>
+					
+				</div>
+
+			</div>
+
+		</header>
+		<!--轮播-->
+		<div class="top-warp">
+			<div class="layui-container">
+				 <div class="layui-row ">
+	                <div class="layui-col-xs12 index-navigation layui-col-sm12 layui-col-md12">
+	    				<div class="layui-carousel" id="test1" lay-filter="test1">
+						    <div carousel-item="">
+							    <div><img src="img/Carousel1.jpeg" width="100%"></div>
+							    <div><img src="img/Carousel2.jpeg" width="100%"></div>
+							    <div><img src="img/Carousel3.jpeg" width="100%"></div>						    
+							  </div>
+						</div>
+						<div class="index-navigation-ul-container">
+							<ul class="index-navigation-ul">
+								<li><span>菜单1</span><span style="padding-left: 130px;" class="layui-icon layui-icon-right"></span></li>
+								<li><span>菜单1</span><span style="padding-left: 130px;" class="layui-icon layui-icon-right"></span></li>
+
+								<li><span>菜单1</span><span style="padding-left: 130px;" class="layui-icon layui-icon-right"></span></li>
+								<div class="menu-detail" style="display: none;">
+									<div class="menu-detail-box" data-v-bc895e86="">
+									
+									 右边详细信息
+					
+									</div>
+								</div>
+							</ul>
+						</div>
+							
+	    		  	 </div> 
+	  			</div>
+				
+			</div> 
+		</div>
+		<!--标题-->
+		<div class="layui-fluid">
+			<div class="layui-row index-title">
+			  <div class="layui-col-md12 layui-col-md-offset1">
+			    <h2 style="font-size: 24px;">推荐课堂</h2>
+			  </div>
+		
+			</div>
+		</div>
+		<!--视频-->
+		<div class="layui-fluid">
+			<div class="layui-row layui-col-space15 video-list">
+				<div class="layui-col-sm4 layui-col-md4 layui-col-lg3">
+					<div class="layui-card CourseListItem_ListItem">
+						<a href="/courses/206/" target="_blank" index="">
+							<div class="layui-row">
+							<div class="layui-col-md12">
+								<div class="CourseListItem_cover">
+									<div class="CourseListItem_img">
+										<img width="100%" height="100%" src="img/description1.jpg" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="layui-row">
+							<div class="layui-col-md12">
+								<div class="CourseListItem_body">
+									<div class="CourseListItem_info"><div class="text-ellipsis-line-2 CourseListItem_title">鲁林希：让你聪明十倍的高效学习力！</div> <div class="CourseListItem_subtitle">告别平庸，不做99%的低效勤奋者</div></div>
+									<div class="CourseListItem_price"> ￥69.00<del class="CourseListItem_oriPrice">￥99.00</del></div>
+								</div>
+							</div>
+						</div>
+
+         				
+						</a>
+						
+					</div>
+				</div>
+				<div class="layui-col-sm4 layui-col-md4 layui-col-lg3">
+					<div class="layui-card CourseListItem_ListItem">
+						<a href="/courses/206/" target="_blank" index="">
+							<div class="layui-row">
+							<div class="layui-col-md12">
+								<div class="CourseListItem_cover">
+									<div class="CourseListItem_img">
+										<img width="100%" height="100%" src="img/description1.jpg" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="layui-row">
+							<div class="layui-col-md12">
+								<div class="CourseListItem_body">
+									<div class="CourseListItem_info"><div class="text-ellipsis-line-2 CourseListItem_title">鲁林希：让你聪明十倍的高效学习力！</div> <div class="CourseListItem_subtitle">告别平庸，不做99%的低效勤奋者</div></div>
+									<div class="CourseListItem_price"> ￥69.00<del class="CourseListItem_oriPrice">￥99.00</del></div>
+								</div>
+							</div>
+						</div>
+
+         				
+						</a>
+						
+					</div>
+				</div>
+				<div class="layui-col-sm4 layui-col-md4 layui-col-lg3">
+					<div class="layui-card CourseListItem_ListItem">
+						<a href="/courses/206/" target="_blank" index="">
+							<div class="layui-row">
+							<div class="layui-col-md12">
+								<div class="CourseListItem_cover">
+									<div class="CourseListItem_img">
+										<img width="100%" height="100%" src="img/description1.jpg" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="layui-row">
+							<div class="layui-col-md12">
+								<div class="CourseListItem_body">
+									<div class="CourseListItem_info"><div class="text-ellipsis-line-2 CourseListItem_title">鲁林希：让你聪明十倍的高效学习力！</div> <div class="CourseListItem_subtitle">告别平庸，不做99%的低效勤奋者</div></div>
+									<div class="CourseListItem_price"> ￥69.00<del class="CourseListItem_oriPrice">￥99.00</del></div>
+								</div>
+							</div>
+						</div>
+
+         				
+						</a>
+						
+					</div>
+				</div>
+				<div class="layui-col-sm4 layui-col-md4 layui-col-lg3">
+					<div class="layui-card CourseListItem_ListItem">
+						<a href="/courses/206/" target="_blank" index="">
+							<div class="layui-row">
+							<div class="layui-col-md12">
+								<div class="CourseListItem_cover">
+									<div class="CourseListItem_img">
+										<img width="100%" height="100%" src="img/description1.jpg" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="layui-row">
+							<div class="layui-col-md12">
+								<div class="CourseListItem_body">
+									<div class="CourseListItem_info"><div class="text-ellipsis-line-2 CourseListItem_title">鲁林希：让你聪明十倍的高效学习力！</div> <div class="CourseListItem_subtitle">告别平庸，不做99%的低效勤奋者</div></div>
+									<div class="CourseListItem_price"> ￥69.00<del class="CourseListItem_oriPrice">￥99.00</del></div>
+								</div>
+							</div>
+						</div>
+
+         				
+						</a>
+						
+					</div>
+				</div>
+				<div class="layui-col-sm4 layui-col-md4 layui-col-lg3">
+					<div class="layui-card CourseListItem_ListItem">
+						<a href="/courses/206/" target="_blank" index="">
+							<div class="layui-row">
+							<div class="layui-col-md12">
+								<div class="CourseListItem_cover">
+									<div class="CourseListItem_img">
+										<img width="100%" height="100%" src="img/description1.jpg" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="layui-row">
+							<div class="layui-col-md12">
+								<div class="CourseListItem_body">
+									<div class="CourseListItem_info"><div class="text-ellipsis-line-2 CourseListItem_title">鲁林希：让你聪明十倍的高效学习力！</div> <div class="CourseListItem_subtitle">告别平庸，不做99%的低效勤奋者</div></div>
+									<div class="CourseListItem_price"> ￥69.00<del class="CourseListItem_oriPrice">￥99.00</del></div>
+								</div>
+							</div>
+						</div>
+
+         				
+						</a>
+						
+					</div>
+				</div>
+				<div class="layui-col-sm4 layui-col-md4 layui-col-lg3">
+					<div class="layui-card CourseListItem_ListItem">
+						<a href="/courses/206/" target="_blank" index="">
+							<div class="layui-row">
+							<div class="layui-col-md12">
+								<div class="CourseListItem_cover">
+									<div class="CourseListItem_img">
+										<img width="100%" height="100%" src="img/description1.jpg" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="layui-row">
+							<div class="layui-col-md12">
+								<div class="CourseListItem_body">
+									<div class="CourseListItem_info"><div class="text-ellipsis-line-2 CourseListItem_title">鲁林希：让你聪明十倍的高效学习力！</div> <div class="CourseListItem_subtitle">告别平庸，不做99%的低效勤奋者</div></div>
+									<div class="CourseListItem_price"> ￥69.00<del class="CourseListItem_oriPrice">￥99.00</del></div>
+								</div>
+							</div>
+						</div>
+
+         				
+						</a>
+						
+					</div>
+				</div>
+				<div class="layui-col-sm4 layui-col-md4 layui-col-lg3">
+					<div class="layui-card CourseListItem_ListItem">
+						<a href="/courses/206/" target="_blank" index="">
+							<div class="layui-row">
+							<div class="layui-col-md12">
+								<div class="CourseListItem_cover">
+									<div class="CourseListItem_img">
+										<img width="100%" height="100%" src="img/description1.jpg" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="layui-row">
+							<div class="layui-col-md12">
+								<div class="CourseListItem_body">
+									<div class="CourseListItem_info"><div class="text-ellipsis-line-2 CourseListItem_title">鲁林希：让你聪明十倍的高效学习力！</div> <div class="CourseListItem_subtitle">告别平庸，不做99%的低效勤奋者</div></div>
+									<div class="CourseListItem_price"> ￥69.00<del class="CourseListItem_oriPrice">￥99.00</del></div>
+								</div>
+							</div>
+						</div>
+
+         				
+						</a>
+						
+					</div>
+				</div>
+				<div class="layui-col-sm4 layui-col-md4 layui-col-lg3">
+					<div class="layui-card CourseListItem_ListItem">
+						<a href="/courses/206/" target="_blank" index="">
+							<div class="layui-row">
+							<div class="layui-col-md12">
+								<div class="CourseListItem_cover">
+									<div class="CourseListItem_img">
+										<img width="100%" height="100%" src="img/description1.jpg" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="layui-row">
+							<div class="layui-col-md12">
+								<div class="CourseListItem_body">
+									<div class="CourseListItem_info"><div class="text-ellipsis-line-2 CourseListItem_title">鲁林希：让你聪明十倍的高效学习力！</div> <div class="CourseListItem_subtitle">告别平庸，不做99%的低效勤奋者</div></div>
+									<div class="CourseListItem_price"> ￥69.00<del class="CourseListItem_oriPrice">￥99.00</del></div>
+								</div>
+							</div>
+						</div>
+
+         				
+						</a>
+						
+					</div>
+				</div>
+			</div>
+			<!--分页开始-->
+			<div class="layui-row">
+  		 		<div class="layui-col-xs6 layui-col-sm6 layui-col-md4 layui-col-md-offset4"> 
+  		 		
+  		 			<div id="paging"></div>
+  		 		
+  		 		</div>
+			</div>
+		
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="layui/layui.js"></script>
+			<script type="text/javascript">
+				$(function(){	 
+					 layui.use('carousel', function(){
+						  var carousel = layui.carousel;
+						  //建造实例
+						  carousel.render({
+						    elem: '#test1'
+						    ,width: '100%' //设置容器宽度
+						    ,arrow: 'always' //始终显示箭头
+						    ,interval:1000
+						    ,height:425
+						    //,anim: 'updown' //切换动画方式
+						  });
+						});
+						
+						//分页
+						layui.use('laypage', function(){
+						  var laypage = layui.laypage;				  
+						  //执行一个laypage实例
+						  laypage.render({
+						    elem: 'paging' //注意，这里的 test1 是 ID，不用加 # 号
+						    ,count: 50 //数据总数，从服务端得到
+						    ,theme: '#1E9FFF'//分页的颜色
+						  });
+						});
+					  $(".index-navigation-ul li").each(function(i,dom){
+						   $(dom).mouseover(function(){
+							
+							$(".menu-detail").css("display","block");
+						  
+						   });
+					 
+					   $(dom).mouseout(function(){
+							
+							$(".menu-detail").css("display","none");
+							   
+					 		});
+					  });
+				});	  
+			</script>
+	</body>
+
+</html>

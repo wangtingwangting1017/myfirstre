@@ -1,0 +1,53 @@
+* {
+	margin: 0px;
+	border: 0px;
+	
+
+}
+
+body{
+	
+}
+.header-right-div{
+    height: 100%;
+    padding-top: 2px;
+}	
+
+.luheader{
+	margin-top: 30px ;
+}
+.layui-input{
+	width: 50%;
+	display: inline-block;
+	
+}
+.search-courese{
+	background-color: #ef9632;
+}
+.header-ul{
+
+	padding-left: 40%;
+	background-color:white;#666
+	line-height: 14px;
+}
+.header-ul li{
+	float: left;
+	background-color:white;
+	margin: 11px 0;
+	padding: 0 6px;
+	color: #666;
+	cursor: pointer;
+}
+.layui-this a {
+    color:#000000;
+}
+.folat-right{
+	float: right;
+}
+.folat-left{
+	float: left;
+}
+
+
+
+|

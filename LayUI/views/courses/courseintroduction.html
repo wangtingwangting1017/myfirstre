@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>课程详细页</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="../../layui/css/layui.css" media="all">
+		<link rel="stylesheet" type="text/css" href="../../css/header.css" />
+		    	<link rel="stylesheet" href="../../css/courseintroduction.css" />
+    	<link href="../../vide7.1.0/css/video-js.min.css" rel="stylesheet">
+
+		<script src="../../vide7.1.0/js/video.min.js"></script>
+		<style>
+		
+		.video-js .vjs-time-control {
+			display: block;
+			min-width: 0px;
+			width: auto;
+			padding-left: 2px;
+			padding-right: 2px;
+			}
+			
+			.video-js .vjs-remaining-time {
+				display: none;
+			}
+			
+		
+			
+		
+		</style>
+	</head>
+	<body>
+		<!--公用头部-->
+		<header>
+			<div class="layui-fluid luheader" style="margin-bottom: 10px;">
+				<div class="layui-row">
+					<div class="layui-col-md4">
+						<div class="layui-row">
+							
+							<div class="layui-col-md4 layui-col-md-offset4"><img width="100px" height="40px" src="../../img/学习经历.png"/></div>
+							<!--<div class="layui-col-md4"><span></span></div>-->
+						</div>
+
+					</div>
+					<div class="layui-col-md4">
+						<form class="layui-form" action="">
+	
+								<input type="text" name="title" required lay-verify="required" placeholder="请输入所需课程" autocomplete="off" class="layui-input">
+								
+								<a  href="http://www.layui.com" class="layui-btn search-courese">搜索</a>
+							
+						</form>
+					</div>
+					<div class="layui-col-md4">
+						<div class="header-right-div">
+							<ul class="layui-nav header-ul"  >
+							  <li class=""  ><a href="">登录</a></li>
+						
+							  <li class=""><a href="">注册</a></li>
+						
+							  <li class="test">
+							  	<span class="hide">关注我们</span>
+							  
+							  </li>
+						
+
+							</ul>
+						</div>
+					</div>
+					
+					</div>
+					
+				</div>
+
+			</div>
+
+		</header>
+	    <!--内容课程部分-->
+	    <div class="layui-container" style="border-top:1px solid #eee">
+	    	
+	    	<div class="layui-row layui-col-space30">
+	    		<!--导航哪一行-->
+	    		<div class="layui-row">
+	    			<div class="layui-col-xs12 layui-col-sm12 layui-col-md12">
+		    			<!--//导航居中-->
+		    			<div class="layui-row">
+		    				<!--偏移-->
+		   				
+		    				<div class="layui-col-xs11 layui-col-sm11 layui-col-md11">
+		    					
+		    					<div class="bread-crumb" >
+		    						<span class="bread-crumb-item" >
+		    						  <span class="f-c9 bread-crumb-name">
+		    							<a href="//open.163.com" >首页
+		    							</a>
+		    						  </span> 
+		    							<!--字体图标-->
+		    						  <span class="layui-icon layui-icon-right" >
+		    						  	
+		    						  </span>
+		    						</span> 
+		    						<span class="bread-crumb-item">
+		    						   <a href="/" class="f-c9 bread-crumb-name router-link-active" data-v-36d00cf6="">
+								         	精品课程
+								    	</a> 
+								    	<!--字体图标-->
+		    						  	<span class="layui-icon layui-icon-right"></span> 	
+		    						  	
+		    						</span> 
+								  </div>
+								</div>
+		    			</div>
+	    			</div>
+	    		
+	    		</div>
+	    		<!--视频播放处-->
+	    		<div class="layui-row">
+	    			<!--视频播放处居中-->
+	    			
+	    			<div class=" layui-col-xs12 layui-col-sm12 layui-col-md12 ">
+		    			<div class="playup layui-row">
+		    				<div class="layui-col-xs6 layui-col-md8 playl">
+						        <!-- 视频播放处左边 -->
+						        <div class="layui-card ">
+						          <div class="layui-card-body">
+						          	
+										
+								          	<video id="play-video"  preload="auto" class="video-js vjs-big-play-centered vjs-default-skin" controls style="width: 100%;" height="430px" data-setup='{}'>
+											    <source src="../../video/1.mp4" type="video/mp4"></source>			 
+											 </video>
+											 
+										
+										
+						          </div>
+						        </div>
+						    </div>
+						         <!-- 视频播放处右边介绍 -->
+						    <div class="layui-col-xs6 layui-col-md4 playr ">
+						        <div class="layui-card playr" style="margin-left: 20px;">
+						         
+						          <div class="layui-card-body">
+						          	<div class="playr_in">
+										<h2 class="vname">Ajax、jQuery基础入门视频教程</h2>
+										<div><a href="javascript:void(0);" sort="0" id="beforeOne">播放上一节</a> | <a href="javascript:void(0);" sort="2" id="afterOne">播放下一节</a></div>
+										<ul>
+											<li class="li1">初级</li>
+											<li class="li2">10节课</li>
+											<li class="li3">29732人在学</li>
+										</ul>
+										<p class="ptxt">​本视频是Ajax和jQuery基础入门视频，该视频针对接触过javaScript基础的学员录制，授课讲究通俗易懂。通过该视频的学习，相信您能够轻 轻...</p>
+										
+										
+									</div>
+						          </div>
+						        </div>
+						      </div>
+						  </div>
+	    			  </div>
+	    			
+	    		</div>	
+	    		<!--课程介绍下面-->
+	    		<div class="layui-row" >
+	    			<!--左边-->
+	    			<div class="layui-col-xs12 layui-col-md12 layui-col-sm12">
+	    			  <div class="layui-row">
+	    			  	<div class="layui-col-xs12 layui-col-md12 layui-col-sm12">
+							<div class="layui-card ">
+							  <div class="layui-card-body" >
+			    				<div class="layui-tab layui-tab-brief">
+									  <ul class="layui-tab-title slidenav">
+									    <li class="layui-this">课程介绍</li>
+									    <li>课程目录</span></li>
+									    <li>课程评论</span></li>
+									  </ul>
+								 </div>
+								 <div class="layui-row">
+									<div class="layui-col-xs10 layui-col-md10 layui-col-sm10 layui-col-xs-offset1 layui-col-sm-offset1 layui-col-md-offset1">
+										<div style="display:none;" class="courseintroduction">
+											<p style="line-height: 2em;">
+											<strong>视频介绍：</strong>
+											</p>
+											<p style="line-height: 2em;">
+												本套视频是传智播客历经5年不断锤炼，推出的一套				
+												该视频专门针对零基础的学员录制，授课讲究通俗易懂，生动幽默。通过该视频的学习，相信你能够轻松地入门Java语言。注：掌握了该视频的知识，就可以具备报读
+											</p>
+										</div>
+										<div style="display:none;" class="outline">
+											<ul>
+												<li class="click">
+														<p>第<b class="chapter_sort">1</b>
+														节 - java开发入门-计算机语言概述
+														</p>
+												</li>
+												<li class="click">
+														<p>第<b class="chapter_sort">2</b>
+															节 - java开发入门-Java语言的跨平台原理(JVM)
+														</p>
+												</li>	
+												<li class="click">
+														<p>第<b class="chapter_sort">2</b>
+															节 - java开发入门-Java语言的跨平台原理(JVM)
+														</p>
+												</li>
+												<li class="click">
+														<p>第<b class="chapter_sort">2</b>
+															节 - java开发入门-Java语言的跨平台原理(JVM)
+														</p>
+												</li>
+												<li class="click">
+														<p>第<b class="chapter_sort">2</b>
+															节 - java开发入门-Java语言的跨平台原理(JVM)
+														</p>
+													
+											
+												</li>
+												<li class="click">
+														<p>第<b class="chapter_sort">2</b>
+															节 - java开发入门-Java语言的跨平台原理(JVM)
+														</p>
+													
+											
+												</li>
+												<li class="click">
+														<p>第<b class="chapter_sort">2</b>
+															节 - java开发入门-Java语言的跨平台原理(JVM)
+														</p>
+													
+											
+												</li>
+											
+											</ul>
+											
+										</div>
+										<div style="display:block;" class="user-comment" > 
+										  <p style="text-align:center;padding:20px 0">请<a href="javascript:void(0);" style="color:#ff6400" class="afont baoming">点击登录</a>后发表评论，我们喜欢真实的你！</p>
+										  <dl class="content_container">
+											<dt><img src="http://thirdwx.qlogo.cn/mmopen/vi_32/icic6vVtCPaZ921ibe7x6RXddjl72aFP2qTlia7MBeBQ6icsGO7av3lGhlr4NuSjMxA9fwtE2C6l6KElicW5gCLeCacQ/132" width="60" height="60">
+											</dt>
+											<dd>
+												<h3><strong>不朽</strong>  
+													<span class="sptime"><i>2019-01-16 01:45</i>
+														
+													</span>  说：
+												</h3>
+												<p style="margin-bottom:8px">王婷老师，讲的太好了！
+												</p>
+												<div class="dsrep1904" style="color:#999;font-size:12px">获取资料讲义请添加QQ群：1162546607<span>~~<i>2019-01-18</i>，
+													<span style="color:#2196F3;cursor:pointer" title="本站唯一管理人员，请不要添加他人QQ等联系方式，谨防受骗中毒！">
+													<br />
+													管理员回复				
+													</span>
+													<p style="margin-bottom:8px">谢谢
+													</p>
+												</span>
+											</div>
+												<div class="hfout repdiv">
+		
+		
+												</div>
+												<div class="sbox">
+													<a href="javascript:void(0)" class="course_good" data="2475" url="/course/addgoodcount.html">赞</a>
+													（<strong class="num">0</strong>）
+													<a href="javascript:void(0)" class="a2 course_rep">回复</a></div>
+											</dd>
+										</dl>
+										</div>
+		
+		
+									</div>
+		
+								</div>
+							 </div>
+								</div>
+						</div>
+						</div>
+						
+	    			</div>
+	    			<!--右边-->
+	    			
+	    		</div>
+	    	</div>
+	    </div>
+	   
+	    <script type="text/javascript" src="../../js/jquery.js" ></script>
+		<script type="text/javascript" src="../../layui/layui.js"></script>
+
+	
+	
+		<script type="text/javascript">
+			
+			$(function(){
+				//点击课程介绍目录评论切换
+				$(".slidenav li").each(function(i){
+					var a=i;
+				    $(this).click(function(){
+				    	$(".slidenav li").removeClass("layui-this");
+				    	if(a==0){
+				    	 $(this).addClass("layui-this");
+				    	 $(".courseintroduction").css("display","block");
+				    	 $(".outline").css("display","none");
+				    	 $(".user-comment").css("display","none");
+				    	}
+				    	if(a==1){
+				    	
+				    	 $(this).addClass("layui-this");
+				    	 $(".courseintroduction").css("display","none");
+				    	 $(".outline").css("display","block");
+				    	 $(".user-comment").css("display","none");
+				    	}
+				    	if(a==2){
+				    	$(this).addClass("layui-this");
+				    	 $(".courseintroduction").css("display","none");
+				    	 $(".outline").css("display","none");
+				    	 $(".user-comment").css("display","block");
+				    	}
+				    });
+				 });
+				
+				
+				/*播放器*/
+				var myPlayer = videojs('play-video',{
+				"techOrder": ["flash","html"],
+				    "autoplay":false,
+				    controlBar: {
+				        captionsButton: false,
+				        chaptersButton : false,
+				        liveDisplay:false,
+				        playbackRateMenuButton: false,
+				        subtitlesButton:false
+				      }
+				},function(){
+					
+					this.ready(function(){
+					
+						});
+					
+					
+					this.on('loadeddata',function(){
+					        console.log(this)
+					    })
+					
+					    this.on('ended',function(){
+					         this.pause();
+			                this.hide()
+					    })
+					 
+				}); // video 标签中的ID
+			  
+			})
+			
+			  
+
+			
+		</script>
+			
+
+	</body>
+</html>
