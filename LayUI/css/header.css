@@ -47,7 +47,42 @@ body{
 .folat-left{
 	float: left;
 }
-
-
+/*对话的css*/
+#dialogWrap{
+	width:358px ;
+	
+}
+.loginDialog{
+	overflow: hidden;
+	width: 260px;
+	margin:0 auto;
+	margin-top: 15px;
+	
+}
+.ofinformation li input {
+    background: #fff;
+    border: 1px solid #ddd;
+    color: #666;
+    height: 38px;
+    font: 16px/38px 'Microsoft YaHei';
+    width: 250px;
+    padding-left: 16px;
+    vertical-align: middle;
+    margin-top: 20px;
+    
+}
+#loginButton{
+	
+	text-align:center;
+	border:1px solid #a1a1a1;
+	padding:10px 8px; 
+	background:#dddddd;
+	width:240px;
+	background-color:#007DDB;
+	border-radius:15px;
+	-moz-border-radius:15px; /* 老的 Firefox */
+	margin-top: 15px;
+	
+}
 
 |

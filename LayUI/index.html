@@ -10,6 +10,9 @@
 		<link rel="stylesheet" href="layui/css/layui.css" media="all">
 		<link rel="stylesheet" type="text/css" href="css/header.css" />
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="layui/layui.js"></script>
+		<script type="text/javascript" src="js/web.js" ></script>
 		
 	
 	</head>
@@ -39,8 +42,8 @@
 					<div class="layui-col-md4">
 						<div class="header-right-div">
 							<ul class="layui-nav header-ul"  >
-							  <li class=""  ><a href="">登录</a></li>
-						
+							  <li class=""  ><a href="javascript:void(0)" onclick="clickLogin()">登录</a></li>
+							  
 							  <li class=""><a href="">注册</a></li>
 						
 							  <li class="">
@@ -323,8 +326,7 @@
   		 		</div>
 			</div>
 		
-		<script type="text/javascript" src="js/jquery.js" ></script>
-		<script type="text/javascript" src="layui/layui.js"></script>
+		
 			<script type="text/javascript">
 				$(function(){	 
 					 layui.use('carousel', function(){
@@ -366,5 +368,53 @@
 				});	  
 			</script>
 	</body>
+	<!--登录注册-->
+	<div id="dialogWrap" style="display: none;">
+		<div class="dialog-ele layui-tab">
+			<ul class="layui-tab-title">
+			    <li class="layui-this">登录</li>
+			    <li>注册</li>
+			 </ul>
+			 <div class="ofinformation">
+			 	<div class="loginDialog">
+			 		<!--输入上一部分-->
+			 		<div >
+			 		<li>	
+					<input type="text" name="title"    placeholder="请输入登录邮箱"  class="layui-input">
+					</li>
+					<li>
+					<input type="text" name="title"    placeholder="请输入密码"  class="layui-input">  
+			 		</li>
+			 		<div style="margin-top: 10px;">
+			 			<span class="fl">
+			 		<a class="vam ml10 c-blue" title="" href="/front/passwordRecovery">
+			 			忘记密码?
+			 		</a>
+			 			
+			 			</span>
+			 		</div>
+			 		<div id="loginButton">
+			 			登录
+			 		</div>
+			 		
 
+			 		</div>
+			 		<!--第三方登录-->
+			 		
+			 		<div>
+			 		  <fieldset class="layui-elem-field layui-field-title">
+			 			<legend style="margin: 0 auto;"><a >第三方登录</a></legend>
+			 		  </fieldset>
+			 		  <div class="" style="text-align: center;">
+			 		  	<a >QQ图标</a>
+			 		  </div>
+			 		</div>
+			 	</div>
+			 	<div class="registerDialog" style="display: none;">
+			 		
+			 	</div>
+			 </div>
+		</div>
+		
+	</div>
 </html>
