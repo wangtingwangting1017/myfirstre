@@ -42,9 +42,9 @@
 					<div class="layui-col-md4">
 						<div class="header-right-div">
 							<ul class="layui-nav header-ul"  >
-							  <li class=""  ><a href="javascript:void(0)" onclick="clickLogin()">登录</a></li>
+							  <li class=""><a href="javascript:void(0)" onclick="clickLogin()">登录</a></li>
 							  
-							  <li class=""><a href="">注册</a></li>
+							  <li class=""><a href="javascript:void(0)" onclick="clickRegister()">注册</a></li>
 						
 							  <li class="">
 							  	<span class="hide">关注我们</span>
@@ -371,9 +371,9 @@
 	<!--登录注册-->
 	<div id="dialogWrap" style="display: none;">
 		<div class="dialog-ele layui-tab">
-			<ul class="layui-tab-title">
-			    <li class="layui-this">登录</li>
-			    <li>注册</li>
+			<ul class="layui-tab-title switch-login-registration">
+			    <li class="layui-this a">登录</li>
+			    <li class="b">注册</li>
 			 </ul>
 			 <div class="ofinformation">
 			 	<div class="loginDialog">
@@ -411,7 +411,35 @@
 			 		</div>
 			 	</div>
 			 	<div class="registerDialog" style="display: none;">
-			 		
+			 		<li>	
+					<input type="text" name="title"    placeholder="请输入登录邮箱"  class="layui-input">
+					</li>
+					<li>	
+					<input type="text" name="title"    placeholder="请输入手机号"  class="layui-input">
+					</li>
+					<li>	
+					<input type="password" name="title"    placeholder="请输入密码"  class="layui-input">
+					</li>
+				
+					<li>	
+					<input type="text" style="width: 100px;" name="title"    placeholder="验证码"  class="layui-input">
+					
+					<img id="captcha-image" class="captcha-image"  onclick="changeCaptcha(this)"  style="vertical-align: middle; cursor: pointer;">
+					<a>点击换图</a>
+					</li>
+					<li>
+					<div style="text-align: center; margin-top: 15px;margin-right: 21px;">
+
+						<input type="text" style=" margin-top:0px;width: 100px;" name="title"    placeholder="短信验证码"  class="layui-input">
+					
+					<a class="layui-btn layui-btn-normal">获取短信验证码</a>
+					</div>
+					
+
+					</li>
+					<div id="regButton">
+			 			注册
+			 		</div>
 			 	</div>
 			 </div>
 		</div>

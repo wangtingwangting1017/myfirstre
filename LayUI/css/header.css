@@ -47,12 +47,12 @@ body{
 .folat-left{
 	float: left;
 }
-/*对话的css*/
+/*注册登录对话的css*/
 #dialogWrap{
 	width:358px ;
 	
 }
-.loginDialog{
+.loginDialog,.registerDialog{
 	overflow: hidden;
 	width: 260px;
 	margin:0 auto;
@@ -84,5 +84,20 @@ body{
 	margin-top: 15px;
 	
 }
+#regButton{
+	
+	text-align:center;
+	border:1px solid #a1a1a1;
+	padding:10px 8px; 
+	background:#dddddd;
+	width:240px;
+	background-color:#007DDB;
+	border-radius:15px;
+	-moz-border-radius:15px; /* 老的 Firefox */
+	margin-top: 15px;
+	
+}
+
+
 
 |
